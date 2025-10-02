@@ -1,0 +1,148 @@
+// import 'dart:ui';
+// import 'package:flutter/material.dart';
+
+// class OnBoardingPage extends StatelessWidget {
+//   const OnBoardingPage({super.key});
+
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       body: SafeArea(
+//         child: Stack(
+//           children: [
+//             ClipRRect(
+//               // 🔹 قصيت الشاشة كلها بحواف دائرية زي تصميم المصمم
+//               borderRadius: BorderRadius.circular(50),
+//               child: Image.asset(
+//                 "assets/images/image1.png",
+//                 fit: BoxFit.cover,
+//                 width: 600,
+//                 height: 900,
+//               ),
+//             ),
+
+//             // 🔹 المحتوى فوق الصورة
+//             Padding(
+//               padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 50),
+//               child: SizedBox(
+//                 width: double.infinity,
+
+//                 child: Column(
+//                   crossAxisAlignment: CrossAxisAlignment.center,
+
+//                   children: [
+//                     // const Spacer(flex: 2), // 🔹 يعمل مسافة مرنة فوق النص
+//                     // 🔹 النص الرئيسي
+//                     Text(
+//                       "Welcome to\nNFT Marketplace",
+
+//                       style: const TextStyle(
+//                         fontFamily: "SFPRODISPLAYBOLD",
+//                         fontSize: 36,
+//                         fontWeight: FontWeight.w900,
+//                         color: Colors.white,
+//                       ),
+//                     ),
+
+//                     const Spacer(flex: 8), // 🔹 يوازن المسافة بين النص والكارد
+//                     // 🔹 الكارد الزجاجي (Glassmorphism)
+//                     ClipRRect(
+//                       borderRadius: BorderRadius.circular(25),
+//                       child: BackdropFilter(
+//                         filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
+//                         child: Container(
+//                           width: 310,
+//                           padding: const EdgeInsets.all(27),
+//                           decoration: BoxDecoration(
+//                             color: Colors.white.withOpacity(
+//                               0.05,
+//                             ), // 🔹 شفافية الكارد
+//                             borderRadius: BorderRadius.circular(25),
+//                           ),
+//                           child: Column(
+//                             children: [
+//                               // 🔹 العنوان داخل الكارد
+//                               const Text(
+//                                 "Explore and Mint NFTs",
+//                                 style: TextStyle(
+//                                   fontSize: 20,
+//                                   fontWeight: FontWeight.bold,
+//                                   color: Colors.white,
+//                                 ),
+//                               ),
+
+//                               const SizedBox(height: 8),
+
+//                               // 🔹 الوصف النصي
+//                               Text(
+//                                 "You can buy and sell the NFTs of the best\nartists in the world.",
+//                                 style: TextStyle(
+//                                   fontSize: 12,
+//                                   color: const Color(
+//                                     0xffEBEBF5,
+//                                   ).withOpacity(0.6),
+//                                   height: 1.5, // 🔹 لزيادة وضوح النص
+//                                 ),
+//                                 textAlign: TextAlign.center,
+//                               ),
+
+//                               const SizedBox(height: 25),
+
+//                               ClipRRect(
+//                                 borderRadius: BorderRadius.all(
+//                                   Radius.circular(25.03),
+//                                 ),
+//                                 child: BackdropFilter(
+//                                   filter: ImageFilter.blur(
+//                                     sigmaX: 100,
+//                                     sigmaY: 100,
+//                                   ),
+//                                   child: Container(
+//                                     width: 198.2,
+//                                     height: 45.53,
+//                                     decoration: BoxDecoration(
+//                                       borderRadius: BorderRadius.all(
+//                                         Radius.circular(25.03),
+//                                       ),
+//                                       border: Border.all(
+//                                         color: Color(0xff777DB3),
+//                                         width: 1.5,
+//                                       ),
+//                                       gradient: LinearGradient(
+//                                         colors: [
+//                                           Color(0xff6c6fff).withOpacity(0.2),
+//                                           Color(0xff97A9F6).withOpacity(0.5),
+//                                         ],
+//                                       ),
+//                                     ),
+//                                     child: MaterialButton(
+//                                       onPressed: () {},
+
+//                                       child: Text(
+//                                         "Get started now",
+//                                         style: TextStyle(
+//                                           fontSize: 15.32,
+//                                           color: Color(0xffFFFFFF),
+//                                         ),
+//                                       ),
+//                                     ),
+//                                   ),
+//                                 ),
+//                               ),
+//                             ],
+//                           ),
+//                         ),
+//                       ),
+//                     ),
+
+//                     const Spacer(flex: 1), // 🔹 يعمل مسافة أسفل الكارد
+//                   ],
+//                 ),
+//               ),
+//             ),
+//           ],
+//         ),
+//       ),
+//     );
+//   }
+// }
